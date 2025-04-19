@@ -33,7 +33,7 @@ namespace XRayBuilderGUI.UI.Preview
                 throw new Exception("Invalid X-Ray file.");
 
             var terms = ver == XRayUtil.XRayVersion.New
-                ? _termsService.ExtractTermsNew(new SQLiteConnection($"Data Source={filePath}; Version=3;"), true)
+                ? _termsService.ExtractTermsNew(new SQLiteConnection(new SQLiteConnectionStringBuilder { DataSource = filePath, Version = 3 }.ToString()), true)
                 : _termsService.ExtractTermsOld(filePath);
 
             flpPeople.Controls.Clear();
