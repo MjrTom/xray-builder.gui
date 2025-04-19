@@ -185,6 +185,7 @@ namespace XRayBuilder.Core.Libraries
 
         public static void ShellExecute(string path)
         {
+            // Assumes the input `path` has been validated before calling this method.
             Process.Start(new ProcessStartInfo(path)
             {
                 UseShellExecute = true
