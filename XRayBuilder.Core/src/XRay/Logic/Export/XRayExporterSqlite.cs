@@ -48,7 +48,12 @@ namespace XRayBuilder.Core.XRay.Logic.Export
         private SQLiteConnection Create(string path)
         {
             SQLiteConnection.CreateFile(path);
-            var db = new SQLiteConnection($"Data Source={path};Version=3;");
+            var connectionStringBuilder = new SQLiteConnectionStringBuilder
+            {
+                DataSource = path,
+                Version = 3
+            };
+            var db = new SQLiteConnection(connectionStringBuilder.ConnectionString);
             db.Open();
             string sql;
             try
