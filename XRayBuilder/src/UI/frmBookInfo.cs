@@ -240,6 +240,13 @@ namespace XRayBuilderGUI.UI
             if (string.IsNullOrEmpty(url))
                 return;
 
+            if (!Uri.TryCreate(url, UriKind.Absolute, out var uriResult) || 
+                (uriResult.Scheme != Uri.UriSchemeHttp && uriResult.Scheme != Uri.UriSchemeHttps))
+            {
+                MessageBox.Show(@"The provided URL is invalid or unsupported.", @"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             try
             {
                 Functions.ShellExecute(url);
