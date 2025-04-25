@@ -6,7 +6,9 @@
 version: 2
 updates:
   - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directories:
+      - "/" # Location of package manifests
+      - "/lib/Ephemerality.Unpack"  # make sure this is scanned too
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     open-pull-requests-limit: 500
