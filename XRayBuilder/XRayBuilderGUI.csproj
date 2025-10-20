@@ -40,7 +40,7 @@
     <PackageReference Include="AsyncEnumerator" Version="4.0.2" />
     <PackageReference Include="HtmlAgilityPack" Version="1.12.2" />
     <PackageReference Include="JetBrains.Annotations" Version="2025.2.0" />
-    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.10" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Pluralize.NET" Version="1.0.2" />
     <PackageReference Include="SimpleInjector" Version="5.5.0" />
