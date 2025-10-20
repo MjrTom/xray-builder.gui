@@ -13,7 +13,7 @@
         <PackageReference Include="FluentMigrator" Version="7.1.0" />
         <PackageReference Include="FluentMigrator.Runner" Version="7.1.0" />
         <PackageReference Include="FluentMigrator.Runner.SQLite" Version="7.1.0" />
-        <PackageReference Include="HtmlAgilityPack" Version="1.12.2" />
+        <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
         <PackageReference Include="ImageSharpCompare" Version="1.2.11" />
         <PackageReference Include="IsExternalInit" Version="1.0.3">
           <PrivateAssets>all</PrivateAssets>
