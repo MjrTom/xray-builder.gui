@@ -45,7 +45,7 @@
     <PackageReference Include="Pluralize.NET" Version="1.0.2" />
     <PackageReference Include="SimpleInjector" Version="5.5.0" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
-    <PackageReference Include="Microsoft.Windows.Compatibility" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="10.0.2" />
     <PackageReference Include="Pluralize.NET.Core" Version="1.0.0" />
   </ItemGroup>
 
